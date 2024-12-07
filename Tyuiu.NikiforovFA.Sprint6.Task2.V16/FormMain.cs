@@ -42,7 +42,7 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task2.V16
 
                 this.chartFunction_NFA.Titles.Add("График функции");
                 this.chartFunction_NFA.ChartAreas[0].AxisX.Title = "Ось Х";
-                this.chartFunction_NFA.ChartAreas[0].AxisY.Title= "Ось Y";
+                this.chartFunction_NFA.ChartAreas[0].AxisY.Title = "Ось Y";
 
                 for (int i = 0; i <= len; i++)
                 {
