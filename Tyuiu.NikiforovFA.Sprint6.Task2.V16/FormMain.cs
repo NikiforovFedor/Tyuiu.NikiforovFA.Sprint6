@@ -44,7 +44,7 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task2.V16
                 this.chartFunction_NFA.ChartAreas[0].AxisX.Title = "Îñü Õ";
                 this.chartFunction_NFA.ChartAreas[0].AxisY.Title = "Îñü Y";
 
-                for (int i = 0; i <= len; i++)
+                for (int i = 0; i < len; i++)
                 {
                     this.dataGridViewFunction_NFA.Rows.Add(Convert.ToString(StartStep), Convert.ToString(res[i]));
                     this.chartFunction_NFA.Series[0].Points.AddXY(StartStep, res[i]);
