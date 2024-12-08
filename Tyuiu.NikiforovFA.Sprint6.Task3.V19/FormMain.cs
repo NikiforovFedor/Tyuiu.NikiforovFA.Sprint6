@@ -54,7 +54,7 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task3.V19
 
             for (int i = 0; i < res.GetLength(0); i++)
             {
-                for (int j = 0; j < res.GetLength(1); j++;
+                for (int j = 0; j < res.GetLength(1); j++) 
                 {
                     matrixString += res[i, j] + " ";
                 }
