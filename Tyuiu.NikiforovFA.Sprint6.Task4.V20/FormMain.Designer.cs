@@ -41,12 +41,16 @@
             labelStopStep_NFA = new Label();
             labelStartStep_NFA = new Label();
             groupBoxCondition_NFA = new GroupBox();
+            pictureBoxFormula_NFA = new PictureBox();
+            labelCondition_NFA = new Label();
             chartFunction_NFA = new System.Windows.Forms.DataVisualization.Charting.Chart();
             groupBoxOutput_NFA = new GroupBox();
             textBoxOutput_NFA = new TextBox();
             splitContainerOutput_NFA = new SplitContainer();
             panelCondition_NFA.SuspendLayout();
             groupBoxInput_NFA.SuspendLayout();
+            groupBoxCondition_NFA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_NFA).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chartFunction_NFA).BeginInit();
             groupBoxOutput_NFA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainerOutput_NFA).BeginInit();
@@ -73,7 +77,7 @@
             // 
             buttonDone_NFA.BackColor = Color.Green;
             buttonDone_NFA.Cursor = Cursors.Hand;
-            buttonDone_NFA.Location = new Point(484, 22);
+            buttonDone_NFA.Location = new Point(613, 22);
             buttonDone_NFA.Name = "buttonDone_NFA";
             buttonDone_NFA.Size = new Size(87, 67);
             buttonDone_NFA.TabIndex = 4;
@@ -85,7 +89,7 @@
             // 
             buttonSave_NFA.BackColor = Color.FromArgb(128, 128, 255);
             buttonSave_NFA.Cursor = Cursors.Hand;
-            buttonSave_NFA.Location = new Point(577, 22);
+            buttonSave_NFA.Location = new Point(706, 22);
             buttonSave_NFA.Name = "buttonSave_NFA";
             buttonSave_NFA.Size = new Size(75, 67);
             buttonSave_NFA.TabIndex = 4;
@@ -112,9 +116,9 @@
             groupBoxInput_NFA.Controls.Add(textBoxStartStep_NFA);
             groupBoxInput_NFA.Controls.Add(labelStopStep_NFA);
             groupBoxInput_NFA.Controls.Add(labelStartStep_NFA);
-            groupBoxInput_NFA.Location = new Point(253, 3);
+            groupBoxInput_NFA.Location = new Point(380, 3);
             groupBoxInput_NFA.Name = "groupBoxInput_NFA";
-            groupBoxInput_NFA.Size = new Size(225, 99);
+            groupBoxInput_NFA.Size = new Size(227, 99);
             groupBoxInput_NFA.TabIndex = 1;
             groupBoxInput_NFA.TabStop = false;
             groupBoxInput_NFA.Text = "Ввод данных";
@@ -155,13 +159,32 @@
             // 
             // groupBoxCondition_NFA
             // 
+            groupBoxCondition_NFA.Controls.Add(pictureBoxFormula_NFA);
+            groupBoxCondition_NFA.Controls.Add(labelCondition_NFA);
             groupBoxCondition_NFA.Location = new Point(5, 0);
             groupBoxCondition_NFA.Name = "groupBoxCondition_NFA";
-            groupBoxCondition_NFA.Size = new Size(242, 100);
+            groupBoxCondition_NFA.Size = new Size(369, 100);
             groupBoxCondition_NFA.TabIndex = 0;
             groupBoxCondition_NFA.TabStop = false;
             groupBoxCondition_NFA.Text = "Условие: ";
             groupBoxCondition_NFA.Enter += groupBoxCondition_NFA_Enter;
+            // 
+            // pictureBoxFormula_NFA
+            // 
+            pictureBoxFormula_NFA.Image = Properties.Resources.Снимок_экрана_2024_12_08_174248;
+            pictureBoxFormula_NFA.Location = new Point(0, 49);
+            pictureBoxFormula_NFA.Name = "pictureBoxFormula_NFA";
+            pictureBoxFormula_NFA.Size = new Size(363, 50);
+            pictureBoxFormula_NFA.TabIndex = 1;
+            pictureBoxFormula_NFA.TabStop = false;
+            // 
+            // labelCondition_NFA
+            // 
+            labelCondition_NFA.Location = new Point(7, 19);
+            labelCondition_NFA.Name = "labelCondition_NFA";
+            labelCondition_NFA.Size = new Size(212, 32);
+            labelCondition_NFA.TabIndex = 0;
+            labelCondition_NFA.Text = "Произветсти табулирование функции на [-5;5]";
             // 
             // chartFunction_NFA
             // 
@@ -234,6 +257,8 @@
             panelCondition_NFA.ResumeLayout(false);
             groupBoxInput_NFA.ResumeLayout(false);
             groupBoxInput_NFA.PerformLayout();
+            groupBoxCondition_NFA.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_NFA).EndInit();
             ((System.ComponentModel.ISupportInitialize)chartFunction_NFA).EndInit();
             groupBoxOutput_NFA.ResumeLayout(false);
             groupBoxOutput_NFA.PerformLayout();
@@ -262,5 +287,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_NFA;
         private Splitter splitter1;
         private SplitContainer splitContainerOutput_NFA;
+        private PictureBox pictureBoxFormula_NFA;
+        private Label labelCondition_NFA;
     }
 }
