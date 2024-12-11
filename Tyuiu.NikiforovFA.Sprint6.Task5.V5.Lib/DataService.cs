@@ -16,7 +16,6 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task5.V5.Lib
                     {
                         len++;
                     }
-                    
                 }
             }
             double[] res = new double[len];

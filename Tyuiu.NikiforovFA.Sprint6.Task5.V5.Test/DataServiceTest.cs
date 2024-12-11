@@ -1,3 +1,4 @@
+using System.IO;
 using Tyuiu.NikiforovFA.Sprint6.Task5.V5.Lib;
 namespace Tyuiu.NikiforovFA.Sprint6.Task5.V5.Test
 {
@@ -12,6 +13,7 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task5.V5.Test
             double[] wait = { 10, 16, -12 };
 
             CollectionAssert.AreEqual(ds.LoadFromDataFile(s), wait);
+            
         }
     }
 }

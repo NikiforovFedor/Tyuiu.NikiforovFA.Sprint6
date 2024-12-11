@@ -19,11 +19,8 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task5.V5
             dataGridViewOutput_NFA.Columns[0].Width = 20;
             dataGridViewOutput_NFA.Columns[1].Width = 50;
 
-            
-
             this.chartDiarramm_NFA.ChartAreas[0].AxisX.Title = "Ось Х";
             this.chartDiarramm_NFA.ChartAreas[0].AxisY.Title = "Ось Y";
-
 
             for (int i = 0; i < res.Length; i++)
             {
@@ -34,7 +31,6 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task5.V5
         private void buttonHelp_NFA_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 5 выполнил студент ПКТб-24-1 Никифоров Ф. А.");
-
         }
         private void buttonOpenFile_NFA_Click(Object sender, EventArgs e)
         {
