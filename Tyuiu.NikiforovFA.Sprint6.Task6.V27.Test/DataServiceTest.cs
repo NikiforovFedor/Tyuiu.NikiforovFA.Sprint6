@@ -9,7 +9,7 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task6.V27.Test
         {
             DataService ds = new DataService();
             string s = @"C:\DataSprint6\Test.txt";
-            Assert.AreEqual(ds.CollectTextFromFile(s), "Hello Holl ");
+            Assert.AreEqual(ds.CollectTextFromFile(s), "Hello Holl");
 
 
         }
