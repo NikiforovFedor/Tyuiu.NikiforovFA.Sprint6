@@ -6,7 +6,7 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task7.V14.Lib
     {
         public int[,] GetMatrix(int[,] matrix)
         {
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < matrix.GetLength(0); i++ )
             {
                 if (matrix[i,1] % 2 == 0)
                 {
