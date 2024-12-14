@@ -65,14 +65,14 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task7.V14
                     dataGridViewInput_NFA.Rows[i].Cells[j].Value = array[i, j];
                 }
             }
-            array = ds.GetMatrix(ReadFile(openFilePath));
+            array = ds.GetMatrix(openFilePath);
             buttonDone_NFA.Enabled = true;
         }
 
         private void buttonDone_NFA_Click(object sender, EventArgs e)
         {
             int[,] res = new int[rows, columns];
-            res = ds.GetMatrix(ReadFile(openFilePath));
+            res = ds.GetMatrix(openFilePath);
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)

@@ -4,16 +4,36 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task7.V14.Lib
 {
     public class DataService : ISprint6Task7V14
     {
-        public int[,] GetMatrix(int[,] matrix)
+        public int[,] GetMatrix(string path)
         {
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            int rows;
+            int columns;
+            string FileData = File.ReadAllText(path);
+            FileData = FileData.Replace('\n', '\r');
+
+            string[] lines = FileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            rows = lines.Length;
+            columns = lines[0].Split(';').Length;
+
+            int[,] array = new int[rows, columns];
+
+            for (int i = 0; i < rows; i++)
             {
-                if (matrix[i, 1] % 2 == 0)
+                string[] line = lines[i].Split(';');
+                for (int j = 0; j < columns; j++)
                 {
-                    matrix[i, 1] = 44;
+                    array[i, j] = Convert.ToInt32(line[j]);
                 }
             }
-            return matrix;
+
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                if (array[i, 1] % 2 == 0)
+                {
+                    array[i, 1] = 44;
+                }
+            }
+            return array;
         }
     }
 }
