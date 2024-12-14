@@ -26,11 +26,11 @@ namespace Tyuiu.NikiforovFA.Sprint6.Task7.V14.Lib
                 }
             }
 
-            for (int i = 0; i < array.GetLength(0); i++)
+            for (int j = 0; j < array.GetLength(1); j++)
             {
-                if (array[i, 1] % 2 == 0)
+                if (array[1, j] % 2 == 0)
                 {
-                    array[i, 1] = 44;
+                    array[1, j] = 44;
                 }
             }
             return array;
